@@ -1,0 +1,37 @@
+/*function curl($endpoints, $UsuarioNombre,$UsuarioClave,$ultimoid){
+    
+    $urlweb = $endpoints;
+	
+	$acceso = ['UsuarioNombre' => $UsuarioNombre,
+			  'UsuarioClave' => $UsuarioClave,
+            'JSONEntrada' => $ultimoid];
+	
+	$header = ['accept: application/json',
+			   'content-type: application/json'];
+		
+	$defaults = array(
+		CURLOPT_URL => $urlweb,
+		CURLOPT_POST => TRUE,
+		CURLOPT_RETURNTRANSFER => TRUE,
+		CURLOPT_SSL_VERIFYPEER => FALSE,
+		CURLOPT_POSTFIELDS => json_encode($acceso),
+		CURLOPT_HTTPHEADER => $header
+	);
+	
+	$ch = curl_init();
+	
+	curl_setopt_array($ch, $defaults);
+	
+	$info = curl_exec($ch);
+	
+	curl_close($ch);
+	
+	return $info;
+}
+
+$accesowebservicie=curl($endpoints, $UsuarioNombre,$UsuarioClave,$ultimoid);
+
+$denuncias = json_decode($accesowebservicie, true);
+
+var_dump($denuncias);*/
+
