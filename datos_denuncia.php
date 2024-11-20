@@ -23,6 +23,7 @@ $fchHrHecho_str='';//string: Fecha y hora del hecho, en formato string dd/MM/yyy
 $hrHechoLibre=''; //string: Hora del hecho
 $lugarDelHecho=''; //string: Lugar del hecho
 $DepartamentoId=0; //int: Identificador del departamento
+$Relato='';
 $DepartamentoNombre='';//string: Nombre del departamento
 $LocalidadId=0; //int: Identificador de la localidad
 $LocalidadNombre='';//string: Nombre de la localidad
@@ -156,6 +157,11 @@ switch ($key) {
         $Table['lugarDelHecho'] = $lugarDelHecho;
         break;
     
+    case 'Relato':
+        $Relato=htmlspecialchars($valor);
+        $Table['Relato'] = $Relato;
+        break;
+        
     case 'departamentoId':
         $DepartamentoId=filter_var($valor, FILTER_SANITIZE_NUMBER_INT);
         $Table['departamentoId'] = $DepartamentoId;
