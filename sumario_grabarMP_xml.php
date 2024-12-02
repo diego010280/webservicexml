@@ -67,7 +67,7 @@
                          if (mysqli_query($conex_surc,$insert_surc_sumario)) {
                                 $ref_altasumnuevo='***creacion de sumario nuevo***';
                                 include ('alta_caratula_sum.php');
-                                include ('alta_tipo_conceptual.php')
+                                include ('alta_tipo_conceptual.php');
                                 
 
                                 if (empty($xml_t_errormysql)) {//error alta de caratula

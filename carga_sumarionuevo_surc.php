@@ -20,6 +20,9 @@ $ref_altacaratula='';
 $IdOrigSum='';
 $surc_tipconcept_idmpf='';
 $surc_tip_rpj_idmpf='';
+$surc_mov_tipact_iditpconc='';
+$surc_mov_tipact_idtiprpj='';
+
 
 //*********************************************************************************************************************************//
       $denunciaID_MP=trim($Table['denunciaId']);
@@ -49,8 +52,8 @@ $surc_tip_rpj_idmpf='';
           
           /* Identificaion de los nuevos valores denuncias...*/    
 
-          $surc_tipconcept_idmpf=trim($Table['tipoConceptual']);
-          $surc_tip_rpj_idmpf=$Table['tipoRPJ'];
+          $surc_mov_tipact_iditpconc=trim($Table['tipoConceptual']);
+          $surc_mov_tipact_idtiprpj=$Table['tipoRPJ'];
 
           /* **************************************************** */
 
